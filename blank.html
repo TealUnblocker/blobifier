@@ -1,0 +1,26 @@
+Allow Popups To Immediately Open
+<button onclick="Cloak();">If popups are blocked click this</button>
+<script>
+          var urlObj1 = new window.URL(window.location.href);
+      var url1 = "https://englishstudy-dusky.vercel.app/";
+      if (url1) {
+        var win1;
+        function Cloak() {
+          if (win1) {
+            win.focus();
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.src = url1;
+            win.document.body.appendChild(iframe);
+          } 
+          window.close();
+        };
+      }
+      Cloak();
+</script>
