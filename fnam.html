@@ -43,111 +43,18 @@
     </style>
 </head>
 <body style="background-color: black;">
+    <button onclick="turnon()" style="color: transparent; background-color: transparent; border-color: transparent;">activate</button>
 	<center>
 
-        <button class="btn-fullscreen" onclick="Cloak()">Blank Open</button>
-
-<script>
-      document.getElementById("i4").style.display = "none";
-function f4() {
-  var copyText = document.getElementById("i4");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
-  document.getElementById("a4").innerHTML="Copied"
-
-}
-</script>
+        <button class="btn-fullscreen" id="blankBtn" onclick="r()">Blank Open</button>
+        <br><br><br><br><br>
     </center>
+    
+    <center><input type="text" id="input" style="visibility: hidden;" placeholder="Passcode(ˆ𐃷ˆ)"><button onclick="button()" id="button" style="visibility: hidden;">Submit</button></center>
     <script>
-        function b() {
-        const currentSiteUrl = window.location.href + '?redirect=true';
-    
-        const htmlContent = `
-            <html>
-                <head>
-                    <title>Title</title>
-                    <link rel="shortcut icon" id="tab-favicon" href="Shortcut Icon">
-                    <style>
-                        body, html {
-                            margin: 0;
-                            padding: 0;
-                            width: 100%;
-                            height: 100%;
-                            overflow: hidden;
-                        }
-                        iframe {
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            border: none;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <iframe src="https://mikefive.vercel.app"></iframe>
-    </body>
-            </html>
-        `;
-    
-        const blob = new Blob([htmlContent], {
-            type: 'text/html'
-        });
-    
-        const blobUrl = URL.createObjectURL(blob);
-    
-        let newWindow = window.open(blobUrl);
-        if (newWindow) {
-            newWindow.onload = () => {
-            };
-        }
-        window.close();
-    }
-
-    function c() {
-        const currentSiteUrl = window.location.href + '?redirect=true';
-    
-        const htmlContent = `
-            <html>
-                <head>
-                    <title>Title</title>
-                    <link rel="shortcut icon" id="tab-favicon" href="Shortcut Icon">
-                    <style>
-                        body, html {
-                            margin: 0;
-                            padding: 0;
-                            width: 100%;
-                            height: 100%;
-                            overflow: hidden;
-                        }
-                        iframe {
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            border: none;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <iframe src="https://mikefive.vercel.app"></iframe>
-    </body>
-            </html>
-        `;
-    
-        const blob = new Blob([htmlContent], {
-            type: 'text/html'
-        });
-    
-        const blobUrl = URL.createObjectURL(blob);
-    document.getElementById("Iframe").src = blobUrl;
        
-    }
           var urlObj1 = new window.URL(window.location.href);
-      var url1 = "https://mikefive.vercel.app/";
+      var url1 = "https://englishstudy-dusky.vercel.app/g/g/FNAM/index.html";
       if (url1) {
         var win1;
         function Cloak() {
@@ -167,41 +74,20 @@ function f4() {
           window.close();
         };
       }
-              var urlObj1 = new window.URL(window.location.href);
-      var url2 = "https://mikefive.vercel.app/";
-      if (url2) {
-        var win1;
-        function Cloakb() {
-          if (win1) {
-            win.focus();
-          } else {
-            win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.src = url2;
-            win.document.body.appendChild(iframe);
-          } 
-          window.close();
-        };
-      }
- function goFullscreen() {
-    const iframe = document.getElementById('Iframe');
-    
-    if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-    } else if (iframe.webkitRequestFullscreen) { /* Safari */
-        iframe.webkitRequestFullscreen();
-    } else if (iframe.msRequestFullscreen) { /* IE11/Edge */
-        iframe.msRequestFullscreen();
-    } else if (iframe.mozRequestFullScreen) { /* Firefox */
-        iframe.mozRequestFullScreen();
-    }
-}
-
+       function button() {
+            var input = document.getElementById("input").value;
+            if (input === "99888") {
+                document.getElementById("blankBtn").onclick = Cloak;
+                document.getElementById("blobBtn").onclick = b;
+            }
+        }
+        function r() {
+            location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+        }
+        function turnon(){
+            document.getElementById("input").style.visibility = "visible";
+            document.getElementById("button").style.visibility = "visible";
+        }
     </script>
 </body>
 </html>
