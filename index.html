@@ -44,6 +44,9 @@
 </head>
 <body style="background-color: black;">
 	<center>
+            <a href="https://blobifier.vercel.app/fnam.html"><button class="btn-fullscreen">{NEW} Five Nights At Michael's</button></a>
+        <br>
+        <br>
     <button class="btn-fullscreen" onclick="b()">Blob Open</button>
     <br>
     <br>
@@ -51,8 +54,6 @@
     <br>
     <br>
         <button class="btn-fullscreen" onclick="Cloak()">Blank Open</button>
-        <br><br>
-         <button class="btn-fullscreen" onclick="Cloakc()">Five Nights At Michael's</button>
         <br><br>
         <button class="btn-fullscreen" onclick="Cloakb()">Blank Open base64</button>
         <br><br>
@@ -76,29 +77,6 @@ function f4() {
 }
 </script>
     </center>
-    <script>
-            var urlObj2 = new window.URL(window.location.href);
-      var urlc = "https://mikefive.vercel.app/";
-      if (urlc) {
-        var winc;
-        function Cloakc() {
-          if (winc) {
-            wind.focus();
-          } else {
-            wind = window.open();
-            wind.document.body.style.margin = '0';
-            wind.document.body.style.height = '100vh';
-            var iframe = wind.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.src = urlc;
-            wind.document.body.appendChild(iframe);
-          } 
-          window.close();
-        };
-      }
-    </script>
     <script>
         function b() {
         const currentSiteUrl = window.location.href + '?redirect=true';
