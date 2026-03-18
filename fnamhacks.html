@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blobifier Full</title>
+    <style>
+        .btn-fullscreen {
+  /* Layout & Size */
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px 0;
+  cursor: pointer;
+  
+  /* Colors & Border */
+  background-color: #007bff; /* Primary Blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  
+  /* Typography */
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  
+  /* Effects & Animation */
+  transition: all 0.3s ease; /* Smooth hover transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover State: Changes color and "lifts" up */
+.btn-fullscreen:hover {
+  background-color: #0056b3; /* Darker Blue */
+  transform: translateY(-2px); /* Lifts up */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Active State: Pushes down when clicked */
+.btn-fullscreen:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <button onclick="turnon()" style="color: transparent; background-color: transparent; border-color: transparent;">activate</button>
+	<center>
+
+        <button class="btn-fullscreen" id="blankBtn" onclick="r()">Blank Open</button>
+        <br><br><br><br><br>
+    </center>
+    
+    <center><input type="text" id="input" style="visibility: hidden;" placeholder="Passcode(ˆ𐃷ˆ)"><button onclick="button()" id="button" style="visibility: hidden;">Submit</button></center>
+    <script>
+       
+          var urlObj1 = new window.URL(window.location.href);
+      var url1 = "https://fnamhacks2.vercel.app/index.html";
+      if (url1) {
+        var win1;
+        function Cloak() {
+          if (win1) {
+            win.focus();
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.src = url1;
+            win.document.body.appendChild(iframe);
+          } 
+          window.close();
+        };
+      }
+       function button() {
+            var input = document.getElementById("input").value;
+            if (input === "hacksig?") {
+                document.getElementById("blankBtn").onclick = Cloak;
+                document.getElementById("blobBtn").onclick = b;
+            }
+        }
+        function r() {
+            location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+        }
+        function turnon(){
+            document.getElementById("input").style.visibility = "visible";
+            document.getElementById("button").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>
