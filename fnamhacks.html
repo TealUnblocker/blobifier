@@ -101,17 +101,20 @@
       }
        function button() {
             var input = document.getElementById("input").value;
-            if (input === "hacksig?") {
+            if (input === "99888") {
                 document.getElementById("blankBtn").onclick = Cloak;
                 document.getElementById("blobBtn").onclick = b;
             }
-            else if (input === "dylanversion") {
+               else if (input === "dylanversion") {
                 document.getElementById("blankBtn").onclick = Cloakdylan;
                 document.getElementById("blobBtn").onclick = b;
             }
+else if (input === "encoded yt link") {
+                location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+            }
         }
         function r() {
-            location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+                document.getElementById("blankBtn").onclick = Cloak;
         }
         function turnon(){
             document.getElementById("input").style.visibility = "visible";
