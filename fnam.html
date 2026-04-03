@@ -74,15 +74,47 @@
           window.close();
         };
       }
+
+
+
+
+                      var urlObj2 = new window.URL(window.location.href);
+      var url2 = "https://historystudying.vercel.app/dv/index.html";
+      if (url2) {
+        var win2;
+        function Cloakdylan() {
+          if (win2) {
+            win3.focus();
+          } else {
+            win3 = window.open();
+            win3.document.body.style.margin = '0';
+            win3.document.body.style.height = '100vh';
+            var iframe = win3.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.src = url2;
+            win3.document.body.appendChild(iframe);
+          } 
+          window.close();
+        };
+      }
        function button() {
             var input = document.getElementById("input").value;
-            if (input === "thenewpassword") {
+            if (input === "99888") {
                 document.getElementById("blankBtn").onclick = Cloak;
                 document.getElementById("blobBtn").onclick = b;
             }
+               else if (input === "dylanversion") {
+                document.getElementById("blankBtn").onclick = Cloakdylan;
+                document.getElementById("blobBtn").onclick = b;
+            }
+else if (input === "encoded yt link") {
+                location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+            }
         }
         function r() {
-            location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+                document.getElementById("blankBtn").onclick = Cloak;
         }
         function turnon(){
             document.getElementById("input").style.visibility = "visible";
